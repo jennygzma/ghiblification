@@ -26,26 +26,13 @@ function App() {
         }
       });
   }
-  //end of new line
 
   return (
-    <div className="App">
+    <div className="bg-ghibli bg-cover bg-center">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className="text-3xl font-bold underline">
+          To get your profile details:{" "}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
-        {/* new line start*/}
-        <p>To get your profile details: </p>
         <button onClick={getData}>Click me</button>
         {profileData && (
           <div>
